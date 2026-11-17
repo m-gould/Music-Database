@@ -18,8 +18,9 @@ If the user selects 1, they are prompted to enter all of the details pertaining 
 - Artist
 - Album
 - Genre
-- Release Year (between 1500 and current year)
-If the user would like to not enter an attribute, they must enter N/A. Leaving a blank will prompt the user to try again. After this is done, if all attributes are entered properly, the song will be added to the database.
+- Release Year (between 1500 and the current year)
+- 
+If the user would like to not enter an attribute, they must enter N/A. Leaving it blank will prompt the user to try again. After this is done, if all attributes are entered properly, the song will be added to the database.
 
 If the user selects 2, the entire collection is shown. Each song is printed in the format:
 Title:
@@ -29,11 +30,11 @@ Title:
    Release Year:
    ID:
 
-IDs are assigned starting at 1. The program searches for the next open ID and assigns each new song to that.
+IDs are assigned starting at 1. The program searches for the next open ID and assigns each new song to it.
 
 If the user selects 3, they are able to search for a song in their collection. The user can search from any attribute (title, artist, album, genre, release year, ID). They enter a term, all attributes are checked, and a list of songs having attributes that match that search appears, printed in the same format as before.
 
-If the user selects 4, they will first be prompted to search for a song. If they choose to do this, they must select a song ID from their search results. If they choose not to, they can enter any song ID. They will then be asked if they would like to change an attribute or delete the song. If they choose to change an attribute, they will then be prompted with the 5 different attributes, choosing which one they'd like to change, and then they enter a new value. If they choose to delete the song, a confirmation message will appear. If they choose 'y', the song will be deleted.
+If the user selects 4, they will first be prompted to search for a song. If they choose to do this, they must select a song ID from their search results. If they choose not to, they can enter any song ID. They will then be asked if they would like to change an attribute or delete the song. If they choose to change an attribute, they will then be prompted with the 5 different attributes, choose which one they'd like to change, and then enter a new value. If they choose to delete the song, a confirmation message will appear. If they choose 'y', the song will be deleted.
 
 If the user selects 5, the program will stop.
 
@@ -41,7 +42,7 @@ If the user selects 5, the program will stop.
 After the file is loaded, songs are stored in a dictionary. Each key is the ID value of the song. It is then stored simply in a nested dictionary, with each attribute having its own key.
 
 ## JSON Storage
-The dictionary is stored in a JSON file that is saved in the user's chosen working directory. If a JSON file does not yet exist, the program will create this new file after the first song is saved. The user can choose to start with their own JSON file, but it must be in the exact same format as the program's default. When the program first runs, it performs checks on the JSON file to ensure that it's structure and information are correct, and if not, it will give the user an error and stop running. There is one local JSON database.
+The dictionary is stored in a JSON file that is saved in the user's chosen working directory. If a JSON file does not yet exist, the program will create this new file after the first song is saved. The user can choose to start with their own JSON file, but it must be in the exact same format as the program's default. When the program first runs, it performs checks on the JSON file to ensure that its structure and information are correct, and if not, it will give the user an error and stop running. There is one local JSON database.
 It is stored as such:
 ```json
 {
@@ -76,7 +77,7 @@ It is stored as such:
 This program is simply stored as a .py file. The user can choose to implement this however they choose. To run it, run the .py file from a terminal or an IDE with Python 3.
 
 ## Example Usage
-
+```python3
 Welcome to your Music Database!
 Here are your options:
    1. Add a song
@@ -285,3 +286,4 @@ Here are your options:
 
 Which choice would you like to do? ==> 5
 Exiting database...
+```
