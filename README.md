@@ -23,13 +23,14 @@ If the user selects 1, they are prompted to enter all of the details pertaining 
 If the user would like to not enter an attribute, they must enter N/A. Leaving it blank will prompt the user to try again. After this is done, if all attributes are entered properly, the song will be added to the database.
 
 If the user selects 2, the entire collection is shown. Each song is printed in the format:
+```
 Title:
    Artist:
    Album:
    Genre:
    Release Year:
    ID:
-
+```
 IDs are assigned starting at 1. The program searches for the next open ID and assigns each new song to it.
 
 If the user selects 3, they are able to search for a song in their collection. The user can search from any attribute (title, artist, album, genre, release year, ID). They enter a term, all attributes are checked, and a list of songs having attributes that match that search appears, printed in the same format as before.
