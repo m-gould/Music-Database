@@ -75,7 +75,7 @@ It is stored as such:
 ```
 
 ## Installation/Execution
-This program is simply stored as a .py file. The user can choose to implement this however they choose. To run it, run the .py file from a terminal or an IDE with Python 3.
+This program is simply stored as a .py file. The user can choose to implement this however they choose. To run it, run the .py file from a terminal or an IDE with Python 3. Included is an example songs.json that you can choose to edit and experiment with.
 
 ## Example Usage
 ```
