@@ -19,7 +19,7 @@ If the user selects 1, they are prompted to enter all of the details pertaining 
 - Album
 - Genre
 - Release Year (between 1500 and the current year)
-- 
+
 If the user would like to not enter an attribute, they must enter N/A. Leaving it blank will prompt the user to try again. After this is done, if all attributes are entered properly, the song will be added to the database.
 
 If the user selects 2, the entire collection is shown. Each song is printed in the format:
