@@ -77,7 +77,7 @@ It is stored as such:
 This program is simply stored as a .py file. The user can choose to implement this however they choose. To run it, run the .py file from a terminal or an IDE with Python 3.
 
 ## Example Usage
-```python3
+```
 Welcome to your Music Database!
 Here are your options:
    1. Add a song
